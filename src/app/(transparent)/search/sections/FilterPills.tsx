@@ -1,5 +1,4 @@
 import { Pill } from "@/components";
-import { useSearchStore } from "@/store/searchStore";
 import { useRouter, useSearchParams } from "next/navigation";
 import useQueryParams from "@/hooks/useQeryParams";
 
