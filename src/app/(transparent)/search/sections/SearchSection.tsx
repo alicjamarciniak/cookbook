@@ -3,14 +3,16 @@
 import { useState, FC, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { type Recipe } from "@/types/Recipe";
-import SearchResults from "./SearchResults";
-import SortSelect from "./SortSelect";
-import Filters from "./Filters";
 import WelcomeSection from "./WelcomeSection";
 import SearchBar from "./SearchBar";
-import FilterPills from "./FilterPills";
 import useDevices from "@/hooks/useDevices";
 import { Affix } from "@/components";
+import dynamic from "next/dynamic";
+
+const DynamicResults = dynamic(() => import("./SearchResults"));
+const DynamicFilters = dynamic(() => import("./Filters"));
+const DynamicFilterPills = dynamic(() => import("./FilterPills"));
+const DynamicSortSelect = dynamic(() => import("./SortSelect"));
 
 // TODO: simplify animation
 
@@ -71,17 +73,17 @@ const SearchSection: FC<SearchSectionProps> = ({ initialResults }) => {
                   !isSearchActive ? "opacity-0" : "opacity-100 "
                 }`}
               >
-                <Filters />
-                <SortSelect />
+                <DynamicFilters />
+                <DynamicSortSelect />
               </div>
             </div>
 
-            <FilterPills />
+            <DynamicFilterPills />
           </div>
         </div>
 
         {isSearchActive && (
-          <SearchResults query={query ?? ""} initialResults={initialResults} />
+          <DynamicResults query={query ?? ""} initialResults={initialResults} />
         )}
       </div>
       <Affix />
