@@ -34,6 +34,7 @@ export async function fetchRecipes({
         ...(diet && { diet }),
         ...(intolerances && { intolerances }),
         ...(sort && { sort, sortDirection: "asc" }),
+        cache: "no-store",
       })
   ).then((response) => response.json());
 
