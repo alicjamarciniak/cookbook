@@ -65,7 +65,7 @@ function Select<T extends string>({
       <Combobox.Target targetType="button">
         <InputBase
           radius="16px"
-          className="[&>div>button]:h-[50px] [&>div>button]:w-[200px]"
+          className="[&>div>button]:h-[50px] [&>div>button]:w-[200px] [&>div>button]:bg-dark-white"
           component="button"
           type="button"
           pointer

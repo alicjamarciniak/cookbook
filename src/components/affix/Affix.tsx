@@ -12,7 +12,7 @@ const Affix = () => {
           <Button
             style={transitionStyles}
             onClick={() => scrollTo({ y: 0 })}
-            color="orange"
+            className="!bg-dark-orange"
           >
             <ArrowSmallUpIcon height="1rem" />
             <span className="hidden md:flex ml-2">Scroll to top</span>

@@ -103,7 +103,7 @@ const Filters = () => {
         onClick={open}
         size="50px"
         radius="16px"
-        className="!px-4"
+        className="!px-4 bg-dark-white"
       >
         <AdjustmentsHorizontalIcon
           className="text-dark-orange"
