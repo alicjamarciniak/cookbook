@@ -31,6 +31,7 @@
     "autoprefixer": "^10.4.16",
     "dompurify": "^3.0.6",
     "embla-carousel-react": "^8.0.0-rc14",
+    "eslint-plugin-import": "^2.29.0",
     "isomorphic-dompurify": "^1.9.0",
     "lottie-react": "^2.4.0",
     "postcss": "^8.4.31",

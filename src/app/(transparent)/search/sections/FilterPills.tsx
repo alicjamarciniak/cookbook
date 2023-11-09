@@ -1,5 +1,5 @@
-import { Pill } from "@/components";
 import { useRouter, useSearchParams } from "next/navigation";
+import { Pill } from "@/components";
 import useQueryParams from "@/hooks/useQeryParams";
 
 const FilterPills = () => {

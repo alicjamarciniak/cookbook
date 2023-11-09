@@ -1,9 +1,9 @@
 "use client";
 
-import { FC } from "react";
 import { useHeadroom } from "@mantine/hooks";
-import CollapsedNavbar from "./CollapsedNavbar";
+import { FC } from "react";
 import useDevices from "@/hooks/useDevices";
+import CollapsedNavbar from "./CollapsedNavbar";
 import FullNavbar from "./FullNavbar";
 
 type NavbarProps = {

@@ -1,8 +1,8 @@
+import { getStaticVariables } from "@/services/client";
+import { type Recipe } from "@/types/Recipe";
+import ExploreSection from "./sections/ExploreSection";
 import FeaturesSection from "./sections/FeaturesSection";
 import HeroSection from "./sections/HeroSection";
-import ExploreSection from "./sections/ExploreSection";
-import { type Recipe } from "@/types/Recipe";
-import { getStaticVariables } from "@/services/client";
 
 async function getMainCourses(): Promise<Recipe[]> {
   const { apiKey, apiUrl } = getStaticVariables();

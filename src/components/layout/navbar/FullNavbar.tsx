@@ -7,7 +7,7 @@ import DesktopMenu from "./DesktopMenu";
 type FullNavbarProps = {
   dark: boolean;
   transparent: boolean;
-  isMobile: boolean;
+  isMobile: boolean | undefined;
 };
 
 const FullNavbar: FC<FullNavbarProps> = ({ dark, transparent, isMobile }) => {

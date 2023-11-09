@@ -1,7 +1,7 @@
-import { LinkIcon, ClockIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ClockIcon, LinkIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { Spoiler } from "@mantine/core";
 import { sanitize } from "isomorphic-dompurify";
 import { FC } from "react";
-import { Spoiler } from "@mantine/core";
 
 type SummaryProps = {
   title: string;

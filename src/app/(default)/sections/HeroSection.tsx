@@ -1,9 +1,9 @@
 "use client";
 
+import { BookOpenIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Image } from "@mantine/core";
-import { MagnifyingGlassIcon, BookOpenIcon } from "@heroicons/react/24/outline";
-import { FilledButton, OutlinedButton } from "@/components/buttons";
 import Link from "next/link";
+import { FilledButton, OutlinedButton } from "@/components/buttons";
 import { showWorkInProgressToast } from "@/services/toasts";
 
 const HeroSection = () => {

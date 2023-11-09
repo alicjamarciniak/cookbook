@@ -2,11 +2,11 @@ import "../globals.css";
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
 
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import type { Metadata } from "next";
-import { Eczar, PT_Sans, Abril_Fatface } from "next/font/google";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { Navbar, Footer } from "@/components";
+import { Abril_Fatface, Eczar, PT_Sans } from "next/font/google";
 import { Toaster } from "sonner";
+import { Footer, Navbar } from "@/components";
 
 const eczarFont = Eczar({
   subsets: ["latin"],

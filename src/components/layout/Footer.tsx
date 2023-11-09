@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { TextInput } from "@mantine/core";
+import Image from "next/image";
 import { showWorkInProgressToast } from "@/services/toasts";
 
 const Footer = () => {

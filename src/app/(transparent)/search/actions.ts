@@ -1,7 +1,7 @@
 "use server";
 
-import { type Recipe } from "@/types/Recipe";
 import { getStaticVariables } from "@/services/client";
+import { type Recipe } from "@/types/Recipe";
 
 type FetchRecipesParams = {
   query: string;
@@ -34,6 +34,7 @@ export async function fetchRecipes({
         ...(diet && { diet }),
         ...(intolerances && { intolerances }),
         ...(sort && { sort, sortDirection: "asc" }),
+        cache: "no-store",
       })
   ).then((response) => response.json());
 

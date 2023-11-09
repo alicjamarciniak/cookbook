@@ -1,11 +1,11 @@
 "use client";
 
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../../tailwind.config.js";
-
-import { Option } from "@/types/FilterOptions.d";
 import { Radio } from "@mantine/core";
 import { useEffect, useState } from "react";
+import resolveConfig from "tailwindcss/resolveConfig";
+import { Option } from "@/types/FilterOptions.d";
+import tailwindConfig from "../../../tailwind.config.js";
+
 
 type RadioGroupProps<T extends string> = {
   options: Option<T>[];

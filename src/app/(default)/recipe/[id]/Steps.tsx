@@ -1,5 +1,5 @@
-import { FC } from "react";
 import { ThemeIcon } from "@mantine/core";
+import { FC } from "react";
 
 export type RecipeInstructions = {
   name: string;

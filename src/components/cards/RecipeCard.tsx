@@ -1,9 +1,8 @@
 "use client";
 
-import { FC } from "react";
 import Image from "next/image";
+import { FC } from "react";
 import { useInView } from "react-intersection-observer";
-import { Skeleton } from "@mantine/core";
 
 type RecipeCardProp = {
   animated?: boolean;
@@ -41,6 +40,7 @@ const RecipeCard: FC<RecipeCardProp> = ({
         ${size === "lg" ? "w-[300px] h-[200px]" : "w-[150px] h-[100px]"}`}
       >
         {image ? (
+          //TODO: add blur loading
           <Image
             alt={`${title}-image`}
             src={image}

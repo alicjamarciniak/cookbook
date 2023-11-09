@@ -1,14 +1,14 @@
 "use client";
 
-import { FC, Suspense, useEffect, useState } from "react";
-import { RecipeCard, NoData } from "@/components";
+import { Loader, Skeleton } from "@mantine/core";
 import Link from "next/link";
-import { type Recipe } from "@/types/Recipe";
-import { Loader } from "@mantine/core";
-import { useInView } from "react-intersection-observer";
-import { fetchRecipes } from "../actions";
 import { useSearchParams } from "next/navigation";
+import { FC, Suspense, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { NoData, RecipeCard } from "@/components";
 import useDevices from "@/hooks/useDevices";
+import { type Recipe } from "@/types/Recipe";
+import { fetchRecipes } from "../actions";
 
 const LIMIT = 20;
 
@@ -71,7 +71,7 @@ const SearchResults: FC<SearchResultsProps> = ({ initialResults, query }) => {
         <div className="flex flex-col min-h-[60vh]">
           <div className="flex flex-wrap md:p-5 gap-4 justify-center">
             {results.map(({ title, image, id }) => (
-              <Suspense fallback={<div>Loading...</div>} key={`search-${id}`}>
+              <Suspense fallback={<Skeleton />} key={`search-${id}`}>
                 <div className="flex">
                   <Link href={`/recipe/${id}`} className="flex grow">
                     <RecipeCard
