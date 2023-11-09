@@ -1,7 +1,7 @@
 "use server";
 
-import { type Recipe } from "@/types/Recipe";
 import { getStaticVariables } from "@/services/client";
+import { type Recipe } from "@/types/Recipe";
 
 type FetchRecipesParams = {
   query: string;

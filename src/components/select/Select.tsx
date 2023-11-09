@@ -1,15 +1,15 @@
 "use client";
 
-import { Option } from "@/types/FilterOptions.d";
 import {
-  Combobox,
-  Input,
-  Group,
-  InputBase,
   CheckIcon,
+  Combobox,
+  Group,
+  Input,
+  InputBase,
   useCombobox,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
+import { Option } from "@/types/FilterOptions.d";
 
 type SelectProps<T> = {
   label?: string;

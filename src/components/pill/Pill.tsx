@@ -1,5 +1,5 @@
-import { FC } from "react";
 import { Pill as MPill } from "@mantine/core";
+import { FC } from "react";
 
 type PillProps = {
   value: string;

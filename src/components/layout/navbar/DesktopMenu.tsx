@@ -1,8 +1,8 @@
-import { FilledButton, OutlinedButton } from "@/components";
 import { UserCircleIcon, UserPlusIcon } from "@heroicons/react/24/outline";
-import { showWorkInProgressToast } from "@/services/toasts";
 import Link from "next/link";
 import { FC } from "react";
+import { FilledButton, OutlinedButton } from "@/components";
+import { showWorkInProgressToast } from "@/services/toasts";
 
 type DesktopMenuProps = {
   transparent?: boolean;

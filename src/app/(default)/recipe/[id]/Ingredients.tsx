@@ -1,8 +1,8 @@
-import { FC } from "react";
-import OnionSvg from "public/svg/onion.svg";
 import Image from "next/image";
-import { Ingredient } from "@/types/Recipe";
+import OnionSvg from "public/svg/onion.svg";
+import { FC } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { Ingredient } from "@/types/Recipe";
 
 type IngredientsProps = {
   extendedIngredients: Ingredient[];

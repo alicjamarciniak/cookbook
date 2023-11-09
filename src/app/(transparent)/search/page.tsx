@@ -1,6 +1,6 @@
 import { FC } from "react";
-import SearchSection from "./sections/SearchSection";
 import { fetchRecipes } from "./actions";
+import SearchSection from "./sections/SearchSection";
 
 type SearchPageProps = {
   searchParams: { [key: string]: string | string[] | undefined };
@@ -28,7 +28,6 @@ const SearchPage: FC<SearchPageProps> = async ({ searchParams }) => {
 
   return (
     <main>
-      {/* CLIENT COMP */}
       <SearchSection initialResults={initialRecipes} />
     </main>
   );

@@ -1,9 +1,9 @@
 "use client";
 
-import { FC } from "react";
-import { RecipeCard, SeeMoreCard } from "@/components";
 import { Carousel } from "@mantine/carousel";
 import Link from "next/link";
+import { FC } from "react";
+import { RecipeCard, SeeMoreCard } from "@/components";
 import { type Recipe } from "../../../types/Recipe";
 
 const ExploreSection: FC<{ mainCourses: Recipe[]; desserts: Recipe[] }> = ({

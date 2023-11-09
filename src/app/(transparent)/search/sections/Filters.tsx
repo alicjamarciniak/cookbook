@@ -1,18 +1,17 @@
 "use client";
 
-import { useDisclosure } from "@mantine/hooks";
-import { Modal, Button } from "@mantine/core";
 import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
+import { Button, Modal } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import { useRouter, useSearchParams } from "next/navigation";
 import RadioGroup from "@/components/radio-group/RadioGroup";
 import { Diets, Intolerances, MealTypes } from "@/data/Options";
-import { useRouter, useSearchParams } from "next/navigation";
+import useQueryParams from "@/hooks/useQeryParams";
 import {
   DietType,
   IntolerancesType,
   MealTypesType,
 } from "@/types/FilterOptions.d";
-
-import useQueryParams from "@/hooks/useQeryParams";
 
 const Filters = () => {
   const basePath = "search";

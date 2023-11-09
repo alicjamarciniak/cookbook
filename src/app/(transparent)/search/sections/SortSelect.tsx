@@ -1,8 +1,8 @@
-import { SortType } from "@/types/FilterOptions.d";
-import { SortOptions } from "@/data/Options";
-import { Select } from "@/components";
 import { useRouter } from "next/navigation";
+import { Select } from "@/components";
+import { SortOptions } from "@/data/Options";
 import useQueryParams from "@/hooks/useQeryParams";
+import { SortType } from "@/types/FilterOptions.d";
 
 const SortSelect = () => {
   const basePath = "search";

@@ -1,9 +1,9 @@
 import {
-  Option,
-  SortType,
   DietType,
   IntolerancesType,
   MealTypesType,
+  Option,
+  SortType,
 } from "@/types/FilterOptions";
 
 export const SortOptions: Option<SortType>[] = [

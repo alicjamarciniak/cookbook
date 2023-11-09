@@ -1,8 +1,8 @@
 "use client";
 
+import { useMediaQuery } from "@mantine/hooks";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "@mantine/hooks";
 
 const SeeMoreCard = ({}) => {
   const lottieRef = useRef(null);

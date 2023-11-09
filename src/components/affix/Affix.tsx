@@ -1,6 +1,6 @@
-import { useWindowScroll } from "@mantine/hooks";
-import { Affix as MAffix, Button, Transition } from "@mantine/core";
 import { ArrowSmallUpIcon } from "@heroicons/react/24/outline";
+import { Button, Affix as MAffix, Transition } from "@mantine/core";
+import { useWindowScroll } from "@mantine/hooks";
 
 const Affix = () => {
   const [scroll, scrollTo] = useWindowScroll();

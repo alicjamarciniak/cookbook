@@ -1,10 +1,10 @@
 "use client";
 
-import { CloseButton, TextInput } from "@mantine/core";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { FC, useState, useRef } from "react";
-import { useEventListener, useDebouncedValue } from "@mantine/hooks";
+import { CloseButton, TextInput } from "@mantine/core";
+import { useDebouncedValue, useEventListener } from "@mantine/hooks";
 import { useRouter } from "next/navigation";
+import { FC, useRef, useState } from "react";
 
 type SearchBarProps = {
   initialSearch: string | null;

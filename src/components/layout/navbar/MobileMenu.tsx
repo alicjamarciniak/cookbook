@@ -1,14 +1,14 @@
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../../../tailwind.config.js";
 
-import { Burger, Menu as MMenu } from "@mantine/core";
 import {
   MagnifyingGlassIcon,
   UserCircleIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/outline";
+import { Burger, Menu as MMenu } from "@mantine/core";
 import Link from "next/link";
+import resolveConfig from "tailwindcss/resolveConfig";
 import { showWorkInProgressToast } from "@/services/toasts";
+import tailwindConfig from "../../../../tailwind.config.js";
 
 const Menu = () => {
   const fullConfig = resolveConfig(tailwindConfig);

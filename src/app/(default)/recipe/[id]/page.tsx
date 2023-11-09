@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { RecipeDetails } from "@/types/Recipe";
-import Summary from "./Summary";
-import Steps, { type RecipeInstructions } from "./Steps";
-import Ingredients from "./Ingredients";
 import { getStaticVariables } from "@/services/client";
+import { RecipeDetails } from "@/types/Recipe";
+import Ingredients from "./Ingredients";
+import Steps, { type RecipeInstructions } from "./Steps";
+import Summary from "./Summary";
 
 async function getRecipeDetails(id: string): Promise<RecipeDetails> {
   const { apiKey, apiUrl } = getStaticVariables();

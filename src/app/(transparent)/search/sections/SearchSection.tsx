@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, FC, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
-import { type Recipe } from "@/types/Recipe";
-import WelcomeSection from "./WelcomeSection";
-import SearchBar from "./SearchBar";
-import useDevices from "@/hooks/useDevices";
-import { Affix } from "@/components";
 import dynamic from "next/dynamic";
+import { useSearchParams } from "next/navigation";
+import { FC, useEffect, useState } from "react";
+import { Affix } from "@/components";
+import useDevices from "@/hooks/useDevices";
+import { type Recipe } from "@/types/Recipe";
+import SearchBar from "./SearchBar";
+import WelcomeSection from "./WelcomeSection";
 
 const DynamicResults = dynamic(() => import("./SearchResults"));
 const DynamicFilters = dynamic(() => import("./Filters"));
