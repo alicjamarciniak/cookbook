@@ -5,7 +5,7 @@ import Image from "next/image";
 import DesktopMenu from "./DesktopMenu";
 
 type CollapsedNavbarProps = {
-  isMobile: boolean;
+  isMobile: boolean | undefined;
   style?: CSSProperties;
 };
 
