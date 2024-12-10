@@ -26,13 +26,13 @@ const ExploreSection: FC<{ mainCourses: Recipe[]; desserts: Recipe[] }> = ({
           </div>
           <div className="flex justify-center">
             <Carousel
-              className="w-[310px] md:w-[1000px] lg:w-[1600px]
+              className="w-[310px] md:w-[1000px] lg:w-full
               lg:[&>div>button]:opacity-0 [&>div>button[data-inactive]]:opacity-0 [&>div>button.[data-inactive]]:cursor-default"
               slideSize={{ base: "100%", sm: "100%", md: "33.33%", lg: "20%" }}
               slideGap={{ base: 0, md: "md" }}
               align="start"
             >
-              {mainCourses.slice(0, 4).map(({ id, title, image }) => (
+              {mainCourses.slice(0, 3).map(({ id, title, image }) => (
                 <Carousel.Slide key={id} className="flex">
                   <Link href={`/recipe/${id}`} className="flex grow">
                     <RecipeCard animated title={title} image={image} />
@@ -55,13 +55,13 @@ const ExploreSection: FC<{ mainCourses: Recipe[]; desserts: Recipe[] }> = ({
 
           <div className="flex justify-center">
             <Carousel
-              className="w-[310px] md:w-[1000px] lg:w-[1600px]
+              className="w-[310px] md:w-[1000px] lg:w-full
               lg:[&>div>button]:opacity-0 [&>div>button[data-inactive]]:opacity-0 [&>div>button.[data-inactive]]:cursor-default"
               slideSize={{ base: "100%", sm: "100%", md: "33.33%", lg: "20%" }}
               slideGap={{ base: 0, md: "md" }}
               align="start"
             >
-              {desserts.slice(0, 4).map(({ id, title, image }) => (
+              {desserts.slice(0, 3).map(({ id, title, image }) => (
                 <Carousel.Slide key={id} className="flex">
                   <Link href={`/recipe/${id}`} className="flex grow">
                     <RecipeCard animated title={title} image={image} />

@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+> [!WARNING]
+> **This app is still in the early stage of development.**
+> Because of that, some of the functions are still in progress. When interacting with them you will be notified that this is the case with work-in-progress toast.
+> You will find more information below in sections [Known issues](#known-issues) and [Planned features](#planned-features)
 
-## Getting Started
 
-First, run the development server:
+# Getting Started
+
+### Overview
+
+This is a simple demo recipe app whose main goal is to showcase part of my dev skills (designed and fully developed by me). It's still in an early stage of development and still needs a lot of work, however, even in its current state there is something to glanced at :sparkles:
+
+Used technologies:
+- NextJS v13
+- React v18
+- TypeScript
+- Tailwind
+- Lottie
+- Mantine (ui lib)
+
+
+### Running the app
+
+You can visit the [demo page](https://cookbook-alicja-marciniaks-projects.vercel.app/) of this project or run it locally.
+
+1. Clone the repository
+2. Build it and run it
 
 ```bash
+npm install
 npm run dev
 # or
+yarn
 yarn dev
 # or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Known issues
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Weak support for tablet screens
+2. Lagging and (possibly overcomplicated) animation in the search section
+3. Improving device detecting mechanism (visible navbar switching issues)
+4. Improving performance and adding more lazy loading
+5. Unnecessary animation in the search section (when navigated with a link or when the query is cleared)
+6. Fixing debounce in the search bar (not catching submit sometimes)
 
-## Learn More
+# Planned features
 
-To learn more about Next.js, take a look at the following resources:
+1. Adding blur for loading recipe images
+2. Adding an order option to sort select
+3. Adding user profile:
+   - sign up
+   - sign in
+   - password reset
+   - simple user panel
+4. Adding favourite recipes feature
+5. Improve explore section - more interesting content (seasonal and trendy suggestions) 
+6. Sending emails
+7. Creating own recipes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
