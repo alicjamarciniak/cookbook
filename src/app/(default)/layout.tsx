@@ -10,7 +10,7 @@ import { Footer, Navbar } from "@/components";
 
 const eczarFont = Eczar({
   subsets: ["latin"],
-  weight: "500",
+  weight: ["500"],
   variable: "--font-eczar",
 });
 
